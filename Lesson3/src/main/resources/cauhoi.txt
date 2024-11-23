@@ -1,28 +1,28 @@
-may ten gi A?
+1.may ten gi A?
 huy
 teo
 ti
 tun
 A
-may ten gi B?
+2.may ten gi B?
 huy
 teo
 ti
 tun
 B
-may ten gi C?
+3.may ten gi C?
 huy
 teo
 ti
 tun
 C
-may ten gi D?
+4.may ten gi D?
 huy
 teo
 ti
 tun
 D
-may ten gi A1?
+5.may ten gi A?
 huy
 teo
 ti

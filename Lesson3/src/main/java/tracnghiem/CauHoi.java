@@ -18,6 +18,10 @@ public class CauHoi {
     private List<String> luaChon= new ArrayList<>();
     private String dapAn;
 
+    public CauHoi() {
+    }
+
+    
     public CauHoi(String cauHoi, String dapAn, String... lc) {
         this.cauHoi = cauHoi;
         this.dapAn = dapAn;
@@ -34,12 +38,11 @@ public class CauHoi {
         for(var x:this.luaChon){
             System.out.println(x);
         }
-        System.out.println(this.dapAn);
         System.out.println("==========");
     }
     
     public boolean isKiemTra(String c){
-        return this.luaChon.equals(c);
+        return this.dapAn.equals(c);
     }
 
     public static int getSlc() {

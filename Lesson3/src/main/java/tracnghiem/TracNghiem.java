@@ -14,6 +14,6 @@ public class TracNghiem {
     public static void main(String[] args) throws FileNotFoundException {
         DsCauHoi ds = new DsCauHoi();
         ds.them("src/main/resources/cauhoi.txt");
-        ds.hienThi();
+        ds.tracNghiem(5);
     }
 }
