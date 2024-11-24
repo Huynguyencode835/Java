@@ -29,6 +29,15 @@ public class SanPham {
         this.giaBan = giaBan;
     }
 
+    public int soSanh(SanPham a){
+        if(this.getGiaBan() > a.getGiaBan())
+            return 1;
+        else if(this.getGiaBan() < a.getGiaBan())
+            return -1;
+        else
+            return 0;
+    }
+    
     public void hienThi(){
         System.out.println("===========");
         System.out.printf("%s\nMaSP: %s\nTenSP: %s\nMoTaSP: %s\nNhaSX: %s\nGia: %.1f\n"
@@ -49,11 +58,11 @@ public class SanPham {
         SanPham.cnt = cnt;
     }
 
-    public int getmSP() {
+    public String getmSP() {
         return mSP;
     }
 
-    public void setmSP(int mSP) {
+    public void setmSP(String mSP) {
         this.mSP = mSP;
     }
 
