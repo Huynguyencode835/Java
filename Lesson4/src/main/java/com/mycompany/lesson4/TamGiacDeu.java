@@ -10,7 +10,6 @@ package com.mycompany.lesson4;
  */
 public class TamGiacDeu extends TamGiac{
     protected String name="Tam Giac Deu";
-    private double abc;
 
     public TamGiacDeu(double abc) {
         super(abc, abc, abc);

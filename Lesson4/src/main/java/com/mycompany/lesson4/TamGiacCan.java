@@ -10,8 +10,7 @@ package com.mycompany.lesson4;
  */
 public class TamGiacCan extends TamGiac{
     protected String name="Tam Giac Can";
-    private double ab,c;
-    
+
     public TamGiacCan(double ab,double c) {
         super(ab,ab,c);
     }
