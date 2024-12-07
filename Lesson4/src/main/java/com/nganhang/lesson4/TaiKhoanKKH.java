@@ -13,6 +13,19 @@ import java.time.LocalDate;
 public class TaiKhoanKKH extends TaiKhoan{
     protected String name = "Tai Khoan Khong Ky Han";
 
+    public void tienGui(double amount){
+        this.setSoTien(this.getSoTien() + amount);
+    }
+    
+    public void tienRut(double amount){
+            this.setSoTien(this.getSoTien() - amount);
+    }
+    
+    public double tienLai(){
+        return 0.01*this.getSoTien();
+    }
+    
+    
     public TaiKhoanKKH(String tenTK,String sDT, String email, double soTien, String ngayTao, String trangThai) {
         super(tenTK,sDT, email, soTien, ngayTao, trangThai);
     }
