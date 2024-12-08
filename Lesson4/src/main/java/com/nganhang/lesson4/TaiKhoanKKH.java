@@ -10,29 +10,29 @@ import java.time.LocalDate;
  *
  * @author ADMIN
  */
-public class TaiKhoanKKH extends TaiKhoan{
+public class TaiKhoanKKH extends TaiKhoan {
+
     protected String name = "Tai Khoan Khong Ky Han";
 
-    public void tienGui(double amount){
+    public void tienGui(double amount) {
         this.setSoTien(this.getSoTien() + amount);
     }
-    
-    public void tienRut(double amount){
-            this.setSoTien(this.getSoTien() - amount);
+
+    public void tienRut(double amount) {
+        this.setSoTien(this.getSoTien() - amount);
     }
-    
-    public double tienLai(){
-        return 0.01*this.getSoTien();
+
+    public double tienLai() {
+        return 0.01 * this.getSoTien();
     }
-    
-    
-    public TaiKhoanKKH(String tenTK,String sDT, String email, double soTien, String ngayTao, String trangThai) {
-        super(tenTK,sDT, email, soTien, ngayTao, trangThai);
+
+    public TaiKhoanKKH(String tenTK, String sDT, String email, double soTien, String ngayTao, String trangThai) {
+        super(tenTK, sDT, email, soTien, ngayTao, trangThai);
     }
 
     @Override
-    public void hienThi(){
-        super.name=this.name;
+    public void hienThi() {
+        super.name = this.name;
         super.hienThi();
     }
 }

@@ -12,9 +12,11 @@ import java.time.format.DateTimeFormatter;
  * @author ADMIN
  */
 public abstract class TaiKhoan {
-    private static int cnt =1;
-    protected String name ="";
+
+    private static int cnt = 1;
+    protected String name = "";
     private String sTK;
+
     {
         this.sTK = String.format("%06d", cnt++);
     }
@@ -25,29 +27,27 @@ public abstract class TaiKhoan {
     private LocalDate ngayTao;
     private String trangThai;
 
-    
+    public abstract void tienGui(double amount);
 
-    
-    public abstract void tienGui(double amount); 
     public abstract void tienRut(double amount);
+
     public abstract double tienLai();
-    
-    
-    public TaiKhoan(String tenTK,String sDT, String email, double soTien, String ngayTao, String trangThai) {
+
+    public TaiKhoan(String tenTK, String sDT, String email, double soTien, String ngayTao, String trangThai) {
         this.tenTk = tenTK;
         this.sDT = sDT;
         this.email = email;
         this.soTien = soTien;
-        this.ngayTao = LocalDate.parse(ngayTao,DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+        this.ngayTao = LocalDate.parse(ngayTao, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         this.trangThai = trangThai;
     }
-    
-    public void hienThi(){
+
+    public void hienThi() {
         System.out.println("=======================");
-        System.out.printf("-%s\nSTK Ngan Hang: %s\nTen TK: %s\nSDT: %s\nEmail: %s\nTien: %.1f\nNgay Tao Tk: %s\nTrang Thai: %s\n", 
+        System.out.printf("-%s\nSTK Ngan Hang: %s\nTen TK: %s\nSDT: %s\nEmail: %s\nTien: %.1f\nNgay Tao Tk: %s\nTrang Thai: %s\n",
                 this.name, this.sTK, this.tenTk, this.sDT, this.email, this.soTien, this.ngayTao.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")), this.trangThai);
     }
-    
+
     public static int getCnt() {
         return cnt;
     }

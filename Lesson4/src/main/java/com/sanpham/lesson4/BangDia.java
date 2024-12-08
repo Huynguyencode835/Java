@@ -29,4 +29,7 @@ public class BangDia extends SanPham {
     public String toString() {
         return super.toString() + String.format("Thoi Gian Chieu: %d", this.thoiGian);
     }
+    
+            
+            
 }

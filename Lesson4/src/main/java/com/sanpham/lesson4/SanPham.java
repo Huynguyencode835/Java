@@ -9,16 +9,17 @@ package com.sanpham.lesson4;
  * @author ADMIN
  */
 public class SanPham {
+
     private static int cnt = 1;
     private String mSP;
-    private String tenSP,moTaSP,nhaSX;
+    private String tenSP, moTaSP, nhaSX;
     private double giaBan;
-    protected String name="San Pham";
-            
+    protected String name = "San Pham";
+
     {
-        this.mSP = "MS-"+cnt++;
+        this.mSP = "MS-" + cnt++;
     }
-    
+
     public SanPham() {
     }
 
@@ -29,27 +30,28 @@ public class SanPham {
         this.giaBan = giaBan;
     }
 
-    public int soSanh(SanPham a){
-        if(this.getGiaBan() > a.getGiaBan())
+    public int soSanh(SanPham a) {
+        if (this.getGiaBan() > a.getGiaBan()) {
             return 1;
-        else if(this.getGiaBan() < a.getGiaBan())
+        } else if (this.getGiaBan() < a.getGiaBan()) {
             return -1;
-        else
+        } else {
             return 0;
+        }
     }
-    
-    public void hienThi(){
+
+    public void hienThi() {
         System.out.println("===========");
-        System.out.printf("%s\nMaSP: %s\nTenSP: %s\nMoTaSP: %s\nNhaSX: %s\nGia: %.1f\n"
-        ,this.name,this.mSP,this.tenSP,this.moTaSP,this.nhaSX,this.giaBan);
+        System.out.printf("%s\nMaSP: %s\nTenSP: %s\nMoTaSP: %s\nNhaSX: %s\nGia: %.1f\n",
+                 this.name, this.mSP, this.tenSP, this.moTaSP, this.nhaSX, this.giaBan);
     }
 
     @Override
     public String toString() {
         return String.format("%s\nMaSP: %s\nTenSP: %s\nMoTaSP: %s\nNhaSX: %s\nGia: %.1f\n",
-                this.name,this.mSP,this.tenSP,this.moTaSP,this.nhaSX,this.giaBan); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+                this.name, this.mSP, this.tenSP, this.moTaSP, this.nhaSX, this.giaBan); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }
-    
+
     public static int getCnt() {
         return cnt;
     }
@@ -97,6 +99,5 @@ public class SanPham {
     public void setGiaBan(double giaBan) {
         this.giaBan = giaBan;
     }
-    
-    
+
 }

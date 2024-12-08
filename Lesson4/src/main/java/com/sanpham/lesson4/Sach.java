@@ -8,24 +8,25 @@ package com.sanpham.lesson4;
  *
  * @author ADMIN
  */
-public class Sach extends SanPham{
+public class Sach extends SanPham {
+
     private int soTrang;
-    protected String name ="Sach";
-    
+    protected String name = "Sach";
+
     public Sach(int soTrang, String tenSP, String moTaSP, String nhaSX, double giaBan) {
         super(tenSP, moTaSP, nhaSX, giaBan);
-        super.name=this.name;
+        super.name = this.name;
         this.soTrang = soTrang;
     }
-    
+
     @Override
-    public void hienThi(){
+    public void hienThi() {
         super.hienThi();
-        System.out.println("So trang: "+this.soTrang);
+        System.out.println("So trang: " + this.soTrang);
     }
-    
+
     @Override
-    public String toString(){
-        return super.toString()+String.format("So trang: %i", this.soTrang);
+    public String toString() {
+        return super.toString() + String.format("So trang: %i", this.soTrang);
     }
 }
