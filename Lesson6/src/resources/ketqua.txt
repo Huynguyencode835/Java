@@ -1,0 +1,57 @@
+===============
+Maso: KH-0013
+Hoten: Le Minh Thien
+NgaySinh: 03/04/1982_ 42 tuoi
+Sodu: 20000000.0
+
+===============
+Maso: KH-0023
+Hoten: Le Thi Lan
+NgaySinh: 28/07/1992_ 32 tuoi
+Sodu: 13000000.0
+
+===============
+Maso: KH-0003
+Hoten: Pham Thi Lan
+NgaySinh: 10/12/1990_ 34 tuoi
+Sodu: 12000000.0
+
+===============
+Maso: KH-0016
+Hoten: Tran Thi Lan
+NgaySinh: 02/03/1984_ 40 tuoi
+Sodu: 9500000.0
+
+===============
+Maso: KH-0002
+Hoten: Tran Minh Tu
+NgaySinh: 22/08/1985_ 39 tuoi
+Sodu: 8902105.0
+
+===============
+Maso: KH-0004
+Hoten: Le Thi Thu
+NgaySinh: 01/01/1995_ 29 tuoi
+Sodu: 7854231.0
+
+===============
+Maso: KH-0020
+Hoten: Nguyen Thi Linh
+NgaySinh: 09/05/1987_ 37 tuoi
+Sodu: 7605008.0
+
+===============
+Khach Hang Vip
+===============
+Maso: KH-0017
+Hoten: Phan Minh Bao
+NgaySinh: 04/08/1986_ 38 tuoi
+Sodu: 7100000.0
+Ngay het han: 04/06/2025
+
+===============
+Maso: KH-0010
+Hoten: Tran Thi Lan
+NgaySinh: 14/02/1990_ 34 tuoi
+Sodu: 6700000.0
+

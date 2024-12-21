@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
  */
 public class QlGiangVien {
     private List<GiangVien> ds = new ArrayList<>();
+
     
     public void them(GiangVien... a){
         this.ds.addAll(Arrays.asList(a));
