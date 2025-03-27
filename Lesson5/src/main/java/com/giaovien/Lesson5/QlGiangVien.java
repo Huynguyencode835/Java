@@ -4,6 +4,7 @@
  */
 package com.giaovien.Lesson5;
 
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -48,11 +49,17 @@ public class QlGiangVien {
     
     public List<GiangVien> tim(String duongDan) throws ClassNotFoundException{
         Class c = Class.forName(duongDan);
-        List<GiangVien> res = new ArrayList<>();
-        this.ds.forEach(x->{
-            if(c.isInstance(x))
-                res.add(x);
-        });
-        return res;
+//        List<GiangVien> res = new ArrayList<>();
+//        this.ds.forEach(x->{
+//            if(c.isInstance(x))
+//                res.add(x);
+//        });
+//        return res;
+        return this.ds.stream().filter(x->{
+            if(x instanceof GiangVien)
+                return true;
+            else 
+                return false;
+        }).collect(Collectors.toList());
     }
 }

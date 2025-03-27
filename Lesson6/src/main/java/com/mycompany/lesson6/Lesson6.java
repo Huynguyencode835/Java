@@ -14,10 +14,8 @@ import java.math.BigDecimal;
  */
 public class Lesson6 {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, ClassNotFoundException {
         QLKH ds = new QLKH("D:\\Work place\\Code\\JAVA\\Java\\Lesson6\\src\\resources\\tailieu.txt.txt");
-        ds.timKiem("Tran Thi Lan").forEach(x->System.out.println(x));
-        ds.hienThi();
-        ds.ghiTop10("D:\\Work place\\Code\\JAVA\\Java\\Lesson6\\src\\resources\\ketqua.txt");
+        ds.timKiem().forEach(x->System.out.println(x));
     }
 }

@@ -21,13 +21,13 @@ public class KhachHang {
     private String hoTen;
     private LocalDate ngaySinh;
     private BigDecimal soSu;
-
-    public KhachHang(String hoTen, String ngaySinh, BigDecimal soSu) {
-        if (cnt > 9999){
-            System.out.println("Qua so luong");
-            return;
+    {
+        if (cnt > 9999) {
+            throw new IllegalStateException("Quá số lượng khách hàng."); 
         }
         this.maSo = String.format("KH-%04d", cnt++);
+    }
+    public KhachHang(String hoTen, String ngaySinh, BigDecimal soSu) {
         this.hoTen = hoTen;
         this.ngaySinh = LocalDate.parse(ngaySinh,FORMATTER);
         this.soSu = soSu;
@@ -41,6 +41,7 @@ public class KhachHang {
         return this.soSu.compareTo(kh.getSoSu());
     }
 
+    
     @Override
     public String toString() {
         return String.format("===============\nMaso: %s\nHoten: %s\nNgaySinh: %s_ %d tuoi\nSodu: %.1f\n",

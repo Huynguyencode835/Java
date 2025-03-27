@@ -41,6 +41,10 @@ public class QLKH {
         this.ds.stream().forEach(x->System.out.println(x));
     }
     
+    public BigDecimal tongDu(){
+        return this.ds.stream().map(KhachHang::getSoSu).reduce(BigDecimal.ZERO, BigDecimal::add);
+    }
+    
     public List<KhachHang> timKiem(String ten){
         return this.ds.stream().filter(x->x.getHoTen().contains(ten)).collect(Collectors.toList());
     }
@@ -51,11 +55,12 @@ public class QLKH {
     }
     
     public void sapXep(){
-        this.ds.sort((x,y)->{
-            BigDecimal b1 = x.getSoSu();
-            BigDecimal b2 = y.getSoSu();
-            return b1.compareTo(b2);
-        });
+        this.ds.sort((x,y)->x.soSanhSoDu(y));
+    }
+    
+    public List<KhachHang> timKiem() throws ClassNotFoundException{
+        Class c = Class.forName("com.mycompany.lesson6.KhachHangVip");  
+        return this.ds.stream().filter(x->c.isInstance(x)).collect(Collectors.toList());
     }
     
     public void ghiTop10(String duongDan) throws FileNotFoundException{
